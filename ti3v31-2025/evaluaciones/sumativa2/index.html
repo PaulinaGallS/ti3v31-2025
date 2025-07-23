@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíces Digitales - Talleres Comunitarios</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Programa de Talleres Abiertos</h1>
+    <p class="eslogan">Conectando culturas a través del arte urbano</p>
+  </header>
+
+  <section class="talleres">
+    <div class="card">
+      <h2>Teatro Comunitario</h2>
+      <p>Expresión corporal y narrativa colectiva.</p>
+      <span>Horario: Lunes y Miércoles, 18:00 - 20:00</span>
+    </div>
+    <div class="card">
+      <h2>Danza Urbana</h2>
+      <p>Movimientos urbanos, freestyle y coreografías.</p>
+      <span>Horario: Martes y Jueves, 17:00 - 19:00</span>
+    </div>
+    <div class="card">
+      <h2>Música Urbana</h2>
+      <p>Ritmos, producción y lírica callejera.</p>
+      <span>Horario: Viernes, 16:00 - 19:00</span>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <h2>Formulario de Preinscripción</h2>
+    <form id="registroForm">
+      <input type="text" id="nombres" name="nombres" placeholder="Nombres" required />
+      <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required />
+      <input type="text" id="rut" name="rut" placeholder="RUT (12345678-9)" required />
+      <input type="text" id="nacimiento" name="nacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required />
+      <select id="taller" name="taller" required>
+        <option value="">Taller de interés</option>
+        <option value="teatro">Teatro Comunitario</option>
+        <option value="danza">Danza Urbana</option>
+        <option value="musica">Música Urbana</option>
+      </select>
+      <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
+      <textarea id="observaciones" name="observaciones" placeholder="Observaciones (opcional)" rows="3"></textarea>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Síguenos en redes: @RaicesDigitales</p>
+    <p>Contacto: info@raicesdigitales.org</p>
+  </footer>
+
+</body>
+</html>

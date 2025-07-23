@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  background-color: #111215;
+  color: rgb(229, 15, 147);
+  font-family: 'Segoe UI', sans-serif;
+}
